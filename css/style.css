@@ -1,12 +1,19 @@
+@font-face {
+    font-family: "SFProDisplay-Thin"; 
+    src: url("./SFProDisplay-Thin.woff") format("woff"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
 .main {
-    margin-left: 410px;
+    margin-left: 400px;
 }
 
 
 .intro_wrap {
-    max-width: 1320px;
+    max-width: 1330px;
     display: flex;
     margin-top: 36px;
+    gap: 20px;
 }
 .intro_info {
     display: flex;
@@ -14,21 +21,27 @@
     padding-top: 120px;
 }
 .intro_info h1 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 78px;
+    font-weight: 100;
+    font-size: 83px;
+    line-height: 130%;
+    font-family: 'SFProDisplay-Thin';
+    font-style: normal;
 }
 .h1_p {
+    font-family: 'Oswald';
+    font-style: normal;
     font-weight: 700;
-    font-size: 84px;
-    line-height: 109px;
+    font-size: 60px;
+    line-height: 130%;
+    margin-top: -12px;
+    margin-bottom: 16px;
 }
 .p_desc {
     margin-bottom: 70px;
     font-weight: 400;
     font-size: 16px;
     line-height: 165%;
+    max-width: 710px;
 }
 .intro_but {
     display: flex;
@@ -39,7 +52,7 @@
     width: 190px;
     display: flex;
     align-items: center;
-    height: 40px;
+    height: 45px;
     border-radius: 45px;
     justify-content: space-between;
     padding-left: 15px;
