@@ -1,0 +1,73 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-family: 'SF Pro Display', sans-serif;                                        
+}
+/* Header-------------------------------------------- */
+.header_wrap {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-top: 46px;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #171717;
+    background: white;
+    position: relative;
+    z-index: 2;
+}
+.header_left, .header_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_left img {
+    margin-right: 140px;
+}
+.div_phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.basket_but {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 116px;
+    height: 40px;
+    border: 1px solid rgba(23, 23, 23, 1);
+    border-radius: 45px;
+}
+.search_inp {
+    border: 1px solid #171717;
+    border-radius: 29px;
+    padding: 7px 0px 7px 16px;
+    height: 20px;
+    background: url("/img/search-ico-png.png") no-repeat 16px 1px;
+    background-size: auto 90%;
+    width: 464px;
+    height: 39px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 165%;
+    padding-left: 60px;
+    color: #171717;
+    margin-right: 104px;
+}
+.header_right .div_phone .img_phone {
+    margin-right: 14px;
+}
+.div_phone {
+    margin-right: 32px;
+}
+.p-adress {
+    margin-right: 280px;
+}
+.basket_link {
+    margin-right: 7px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #171717;
+}
