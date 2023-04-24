@@ -2,7 +2,8 @@
     padding: 0px;
     margin: 0px;
     text-decoration: none;
-    font-family: 'SF Pro Display', sans-serif;                                        
+    font-family: 'SF Pro Display', sans-serif;  
+    color: #171717;                                      
 }
 /* Header-------------------------------------------- */
 .header_wrap {

@@ -1,0 +1,23 @@
+.footer {
+    margin-left: 400px;
+    position: relative;
+    z-index: 99;
+}
+.footer::before {
+    display: block;
+    content: '';
+    width: 1500px;
+    height: 1px;
+    background-color: #171717;
+    position: absolute;
+    top: 0px;
+    left: -30px;
+}
+.footer_wrap {
+    display: flex;
+    padding-top: 90px;
+    gap: 77px;
+}
+.footer_left_top {
+    width: 600px;
+}
