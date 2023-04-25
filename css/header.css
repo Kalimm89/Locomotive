@@ -3,9 +3,13 @@
     margin: 0px;
     text-decoration: none;
     font-family: 'SF Pro Display', sans-serif;  
-    color: #171717;                                      
+    color: #171717;
+    max-width: 1920px;                                    
 }
 /* Header-------------------------------------------- */
+.header_mobile {
+    display: none;
+}
 .header_wrap {
     max-width: 1600px;
     margin: 0 auto;
@@ -40,6 +44,17 @@
     border: 1px solid rgba(23, 23, 23, 1);
     border-radius: 45px;
 }
+.basket_but:hover img {
+    display: none;
+}
+.basket_but:hover p {
+    color: white;
+    transition: 0.5s;
+}
+.basket_but:hover {
+    background: #171717;
+    transition: 0.5s;
+}
 .search_inp {
     border: 1px solid #171717;
     border-radius: 29px;
@@ -71,4 +86,50 @@
     font-weight: 300;
     font-size: 16px;
     color: #171717;
+}
+/* _____________________________________________Adaptive_________________________________________ */
+@media screen and (max-width: 768px) {
+    .header_left, .header_right {
+        display: none;
+    }
+    .header_mobile {
+        display: flex;
+        align-items: center;
+        width: 360px;
+        justify-content: space-between;
+    }
+    .header_mobile a {
+        padding: 6px 9px;
+        border: 1px solid #171717;
+        border-radius: 50px;
+    }
+    .header_mobile .p-adress {
+        margin-right: 0px;
+    }
+    .header_wrap {
+        justify-content: center;
+        padding-top: 25px;
+        padding-bottom: 22px;
+    }
+    .search_form {
+        display: none;
+    }
+    .search_form_mob {
+        display: none;
+    }
+    .search_inp_mob {
+        border: 1px solid #171717;
+        border-radius: 29px;
+        padding: 7px 0px 7px 16px;
+        background: url(/img/search-ico-png.png) no-repeat 16px;
+        background-size: 9%;
+        width: 276px;
+        height: 39px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 165%;
+        padding-left: 60px;
+        color: #171717;
+    }
 }

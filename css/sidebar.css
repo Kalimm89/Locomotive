@@ -27,6 +27,13 @@
 }
 .sidebar_li a {
     color: #171717;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 5px 10px;
+    border-style: none;
+}
+.sidebar_li a:hover, .sidebar_li a:active {
+    border-style: groove;
 }
 .arrow_up {
     text-align: center;
@@ -37,6 +44,12 @@
     border-radius: 50%; 
     padding: 18px 20px;
     width: 30px;
+}
+.arrow_up img{
+    transition: 0.5s;
+}
+.arrow_up:hover img{
+    transform: scale(1.5);
 }
 .sidebar_wrap::after {
     display: block;

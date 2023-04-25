@@ -50,6 +50,7 @@
 .intro_but {
     display: flex;
     gap: 12px;
+    transition: 1s;
 }
 .in_btn, .serv_btn {
     border: 1px solid #171717;
@@ -66,6 +67,15 @@
     line-height: 135%;
     color: #171717;
     cursor: pointer;
+    transition: 1s;
+}
+.in_btn:hover img {
+    display: none;
+}
+.in_btn:hover {
+    justify-content: center;
+    color: white;
+    background: #171717;
 }
 /* _____________________________________about_________________________________________________ */
 .about {
@@ -176,6 +186,15 @@
     line-height: 135%;
     margin-bottom: 16px;
 }
+.serv_btn:hover img {
+    display: none;
+}
+.serv_btn:hover {
+    justify-content: center;
+    color: white;
+    background: #171717;
+    transition: 1s;
+}
 /* ____________________________________Spec_Offers__________________________________________________ */
 .spec_offers {
     margin-bottom: 200px;
@@ -240,6 +259,15 @@
     border: 1px solid rgba(23, 23, 23, 1);
     border-radius: 45px;
 }
+.buy_btn:hover img {
+    display: none;
+}
+.buy_btn:hover {
+    justify-content: center;
+    color: white;
+    background: #171717;
+    transition: 1s;
+}
 .buy_btn img {
     padding-left: 30px;
 }
@@ -256,6 +284,12 @@
     width: 30px;
     display: flex;
     justify-content: center;
+}
+.arrows img{
+    transition: 0.5s;
+}
+.arrows:hover img{
+    transform: scale(1.5);
 }
 .pag_right {
     margin-left: 20px;
@@ -316,6 +350,22 @@
     line-height: 135%;
     color: #171717;
     cursor: pointer;
+}
+.arow_hide {
+    display: none;
+    color: white;
+    padding-right: 12px;
+    padding-left: 5px;
+    font-size: 20px;
+}
+.catalog_li a:hover {
+    width: 110px;
+    background-color: #171717;
+    color: white;
+    transition: 0.1s;
+}
+.catalog_li a:hover .arow_hide {
+    display: block;
 }
 /* ____________________________________Advantages__________________________________________________ */
 .advantages {
@@ -416,6 +466,22 @@
     line-height: 135%;
     color: #171717;
     cursor: pointer;
+}
+.arow_hide {
+    display: none;
+    color: white;
+    padding-right: 12px;
+    padding-left: 5px;
+    font-size: 20px;
+}
+.partners_li a:hover {
+    width: 140px;
+    background-color: #171717;
+    color: white;
+    transition: 0.1s;
+}
+.partners_li a:hover .arow_hide {
+    display: block;
 }
 /* ____________________________________Geography__________________________________________________ */
 .geography {
