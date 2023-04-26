@@ -10,6 +10,15 @@
     });
 }());
 
-// document.getElementsById('search_but_on').onclick = function() {
-// document.getElementsById('search_but_on').style.display = none;
-// }
+// Burger handler
+(function () {
+    const burgerItem = document.querySelector('.burger');
+    const menu = document.querySelector('.menu_nav');
+    const menuCloseItem = document.querySelector('.menu_nav-close');
+    burgerItem.addEventListener('click', () => {
+        menu.classList.add('menu_nav_active');
+    });
+    menuCloseItem.addEventListener('click', () => {
+        menu.classList.remove('menu_nav_active');
+    });
+}());

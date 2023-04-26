@@ -4,7 +4,9 @@
     text-decoration: none;
     font-family: 'SF Pro Display', sans-serif;  
     color: #171717;
-    max-width: 1920px;                                    
+    max-width: 1920px;
+    text-decoration: none;
+    list-style-type: none;                                   
 }
 /* Header-------------------------------------------- */
 .header_mobile {
@@ -43,6 +45,7 @@
     height: 40px;
     border: 1px solid rgba(23, 23, 23, 1);
     border-radius: 45px;
+    position: relative;
 }
 .basket_but:hover img {
     display: none;
@@ -54,6 +57,9 @@
 .basket_but:hover {
     background: #171717;
     transition: 0.5s;
+}
+.basket_but:hover .bask-p-d {
+    display: none;
 }
 .search_inp {
     border: 1px solid #171717;
@@ -87,6 +93,20 @@
     font-size: 16px;
     color: #171717;
 }
+.basket-img {
+    margin-left: 7px;
+}
+.bask-el-d {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+}
+.bask-p-d {
+    position: absolute;
+    top: 6px;
+    right: 16px;
+    color: white;
+}
 /* _____________________________________________Adaptive_________________________________________ */
 @media screen and (max-width: 768px) {
     .header_left, .header_right {
@@ -97,6 +117,7 @@
         align-items: center;
         width: 360px;
         justify-content: space-between;
+        padding: 0px 20px;
     }
     .header_mobile a {
         padding: 6px 9px;

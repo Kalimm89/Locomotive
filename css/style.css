@@ -77,6 +77,9 @@
     color: white;
     background: #171717;
 }
+.intro_img-mob {
+    display: none;
+}
 /* _____________________________________about_________________________________________________ */
 .about {
     margin-bottom: 200px;
@@ -194,6 +197,9 @@
     color: white;
     background: #171717;
     transition: 1s;
+}
+.ct_img_mob, .cbl_img_mob, .cbr_img_mob {
+    display: none;
 }
 /* ____________________________________Spec_Offers__________________________________________________ */
 .spec_offers {
@@ -517,4 +523,214 @@
     line-height: 165%;
     display: flex;
     align-items: center;
+}
+/* _____________________________________________Adaptive_________________________________________ */
+@media screen and (max-width: 768px) {
+    /* _____________________________________________Intro_________________________________________ */
+    .main {
+        margin-left: 0px;
+    }
+    .intro {
+        margin-bottom: 136px;
+    }
+    .intro_wrap {
+        flex-direction: column;
+        margin-top: 56px;
+    }
+    .intro_img {
+        display: none;
+    }
+    .intro_info {
+        padding: 0px 16px;
+    }
+    .intro_img-mob {
+        display: block;
+    }
+    .intro_info h1, .h1_p {
+        font-size: 38px;
+        width: 330px;
+    }
+    .h1_p {
+        width: 270px;
+        margin-top: 0px;
+    }
+    .intro_img-mob img {
+        margin-bottom: 24px;
+    }
+    .intro_but {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .in_btn_1 {
+        margin-left: 50px;
+    }
+    .in_btn_2 {
+        margin-left: 100px;
+    }
+    /* _____________________________________________About_________________________________________ */
+    .about {
+        margin-bottom: 120px;
+    }
+    .about_cont {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .about_wrap {
+        padding: 0 16px;
+    }
+    .about_wrap h2 {
+        font-size: 24px;
+        line-height: 165%;
+        margin-bottom: 24px;
+    }
+    .about_cont_img img {
+        width: 160px;
+    }
+    .about_cont_img_l {
+        gap: 6px;
+    }
+    .about_cont_img_r {
+        gap: 6px;
+    }
+    .about_cont_img {
+        gap: 8px;
+    }
+    /* _____________________________________________ourServ_________________________________________ */
+    .our_serv {
+        margin-bottom: 120px;
+    }
+    .out_serv_wrap {
+        padding: 0 16px;
+    }
+    .out_serv_wrap h2 {
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
+    .ct_img_mob, .cbr_img_mob, .cbl_img_mob {
+        display: block;
+        margin-bottom: 8px;
+    }
+    .cbr_img_mob img{
+        width: 311px;
+    }
+    .ct_img, .cbr_img, .cbl_img {
+        display: none;
+    }
+    .card_top {
+        padding: 8px;
+        width: 310px;
+        height: 397px;
+        gap: 0px;
+    }
+    .ct_desc {
+        justify-content: normal;
+        align-items: end;
+    }
+    .ct_desc_wrap h3 {
+        font-size: 20px;
+        width: 310px;
+    }
+    .ct_desc_wrap p {
+        width: 310px;
+        margin-bottom: 20px;
+    }
+    .card_bot {
+        flex-direction: column;
+    }
+    .card_bot_r, .card_bot_l {
+        padding: 8px;
+        width: 310px;
+        height: auto;
+        gap: 0px;
+    }
+    .card_bot h3 {
+        margin-bottom: 8px;
+    }
+    .cbl_desc, .cbr_desc {
+        width: auto;
+        align-items: end;
+    }
+    .cbl_desc_wrap h3 {
+        font-size: 20px;
+    }
+    .cbl_desc_wrap p {
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 165%;
+    }
+    /* _____________________________________________spec_offers_________________________________________ */
+    .spec_offers {
+        overflow: hidden;
+        margin-bottom: 110px;
+    }
+    .spec_offers_wrap {
+        padding: 0 16px;
+        height: 850px;
+    }
+    .spec_offers_wrap h2 {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 165%;
+    }
+    .cards_wrap {
+        gap: 16px;
+    }
+    /* _____________________________________________catalog_________________________________________ */
+    .catalog {
+        margin-bottom: 64px;
+    }
+    .catalog_wrap {
+        padding: 0 16px;
+    }
+    .catalog_wrap h2 {
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
+    .catalog_card {
+        flex-direction: column;
+    }
+    .catalog_img {
+        background-image: url(/img/catalog-img-1-small.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 213px;
+        width: auto;
+        padding: 0px;
+        margin-bottom: 16px;
+    }
+    .catalog_list {
+        width: auto;
+    }
+    .catalog_li p {
+        font-size: 16px !important;
+    }
+    /* _____________________________________________advantages_________________________________________ */
+    .advantages {
+        margin-bottom: 64px;
+    }
+    .advant_wrap {
+        padding: 0 16px;
+    }
+    .advant_wrap h2 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    .advant_left p {
+        font-size: 16px;
+        width: auto;
+    }
+    .adv_card {
+        gap: 29px;
+        flex-direction: column;
+    }
+    .advant_right {
+        gap: 21px;
+    }
+    .ar_card_top img {
+        height: 32px;
+    }
+    .ar_card_top h4 {
+        font-size: 16px;
+    }
 }
