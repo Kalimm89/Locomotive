@@ -162,3 +162,75 @@
     font-size: 16px;
     line-height: 165%;
 }
+.contact_us_mob {
+    display: none;
+}
+/* _____________________________________________Adaptive_________________________________________ */
+@media screen and (max-width: 768px) {
+    .footer {
+        margin-left: 0px;
+        overflow: hidden;
+    }
+    .footer_wrap {
+        flex-direction: column;
+        padding: 64px 16px 0px 16px;
+        gap: 64px;
+        margin-bottom: 128px;
+    }
+    .footer_left {
+        width: auto;
+    }
+    .footer_left_top {
+        margin-bottom: 70px;
+    }
+    .footer_left_top p {
+        width: auto;
+    }
+    .foot_left_btn {
+        flex-direction: column;
+        gap: 20px;
+        align-items: end;
+    }
+    .foot_left_btn a {
+        margin-right: 0px;
+    }
+    .contact_us_mob {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 36px 36px 24px 36px;
+        box-shadow: 0px 0px 4px rgba(75, 75, 75, 0.25);
+        border-radius: 24px;
+        margin-bottom: 64px;
+    }
+    .contact_us_mob h4 {
+        font-weight: 300;
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    .contact_us_mob p {
+        margin-bottom: 24px;
+    }
+    .foot_inp {
+        width: 260px;
+    }
+    .submit {
+        margin-right: 0px;
+        align-self: flex-end;
+        width: 180px;
+    }
+    .footer_cont_card_r {
+        gap: 20px;
+    }
+    .footer_right_cont {
+        align-items: center;
+    }
+    .footer_right_p {
+        text-align: center;
+    }
+    .contact_us {
+        display: none;
+    }
+}

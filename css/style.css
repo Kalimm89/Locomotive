@@ -215,6 +215,7 @@
     display: flex;
     gap: 66px;
     position: relative;
+    padding: 5px;
 }
 .cards {
     box-shadow: 0px 0px 4px rgba(75, 75, 75, 0.25);
@@ -320,7 +321,7 @@
     display: flex;
 }
 .catalog_img {
-    background-image: url('/img/catalog-img-1.png');
+    background-image: url('/img/catalog-img-0.png');
     background-position: center;
     background-repeat: no-repeat;
     width: 351px;
@@ -330,12 +331,16 @@
 .catalog_list {
     width: 725px;
 }
+.catalog_li-1:hover .catalog_img {
+    background-image: url('/img/catalog-img-1.png');
+}
 .catalog_li {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #171717;
     padding-bottom: 13px;
     margin-bottom: 40px;
+    cursor: pointer;
 }
 .catalog_li p {
     font-weight: 300;
@@ -489,6 +494,9 @@
 .partners_li a:hover .arow_hide {
     display: block;
 }
+.partners_img_mob {
+    display: none;
+}
 /* ____________________________________Geography__________________________________________________ */
 .geography {
     margin-bottom: 200px;
@@ -524,6 +532,21 @@
     display: flex;
     align-items: center;
 }
+.tt-style:hover {
+    stroke: blue;
+}
+.tt-style:focus {
+    outline: none;
+}
+.tippy-box[data-theme~='tomato'] {
+    background-color: white;
+    border-radius: 20px;
+    padding: 4px 24px;
+    box-shadow: 0px 0px 4px 0px rgba(75, 75, 75, 0.25);
+}
+.div-svg {
+    display: none;
+}
 /* _____________________________________________Adaptive_________________________________________ */
 @media screen and (max-width: 768px) {
     /* _____________________________________________Intro_________________________________________ */
@@ -545,10 +568,15 @@
     }
     .intro_img-mob {
         display: block;
+        align-self: center;
     }
     .intro_info h1, .h1_p {
         font-size: 38px;
         width: 330px;
+    }
+    .intro_info h1 {
+        font-size: 36px;
+        width: 320px;
     }
     .h1_p {
         width: 270px;
@@ -560,6 +588,7 @@
     .intro_but {
         flex-direction: column;
         gap: 30px;
+        align-self: center;
     }
     .in_btn_1 {
         margin-left: 50px;
@@ -594,6 +623,7 @@
     }
     .about_cont_img {
         gap: 8px;
+        justify-content: center;
     }
     /* _____________________________________________ourServ_________________________________________ */
     .our_serv {
@@ -601,10 +631,12 @@
     }
     .out_serv_wrap {
         padding: 0 16px;
+        align-items: center;
     }
     .out_serv_wrap h2 {
         font-size: 24px;
         margin-bottom: 0px;
+        align-self: baseline;
     }
     .ct_img_mob, .cbr_img_mob, .cbl_img_mob {
         display: block;
@@ -691,9 +723,10 @@
         flex-direction: column;
     }
     .catalog_img {
-        background-image: url(/img/catalog-img-1-small.png);
+        background-image: url(/img/catalog-img-0.png);
         background-position: center;
         background-repeat: no-repeat;
+        background-size: contain;
         height: 213px;
         width: auto;
         padding: 0px;
@@ -726,11 +759,74 @@
     }
     .advant_right {
         gap: 21px;
+        justify-content: center;
     }
     .ar_card_top img {
         height: 32px;
     }
     .ar_card_top h4 {
         font-size: 16px;
+    }
+    /* _____________________________________________partners_________________________________________ */
+    .partners {
+        margin-bottom: 128px;
+    }
+    .partners_wrap {
+        padding: 0 16px;
+    }
+    .partners_wrap h2 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    .partners_img {
+        display: none;
+    }
+    .partners_img_mob {
+        display: block;
+        text-align: center;
+    }
+    .partners_img_mob img {
+        width: 100%;
+    }
+    .partners_card {
+        flex-direction: column;
+    }
+    .partners_list {
+        width: auto;
+    }
+    .partners_li a {
+        padding-right: 15px;
+        justify-content: center;
+        width: auto;
+    }
+    /* _____________________________________________geography_________________________________________ */
+    .geography {
+        margin-bottom: 73px;
+        text-align: center;
+    }
+    .geography_wrap {
+        padding: 0 16px;
+    }
+    .geography_wrap h2 {
+        font-size: 24px;
+        margin-bottom: 24px;
+        margin-right: auto;
+    }
+    .geo_desc {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+    .geo_desc_cards span {
+        font-size: 36px;
+    }
+    .div-svg img {
+        width: 100%;
+    }
+    .div-svg {
+        display: block;
+    }
+    .svg-desc {
+        display: none;
     }
 }
