@@ -59,21 +59,22 @@ tippy('.tool-tip', {
 //Swiper
 new Swiper('.swiper', {
     loop: false,
-    pagination: {
-        el: '.swiper-pagination',
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
       },
     grabCursor: true,
     slidesPerView: 1,
-    spaceBetween: 12,
+    spaceBetween: 5,
     breakpoints: {
         1330: {
-            slidesPerView: 3,
+            slidesPerView: 4,
         },
         1075: {
             slidesPerView: 2.5,
         },
         887: {
-            slidesPerView: 1.5,
+            slidesPerView: 4,
         }
     },
 });

@@ -6,7 +6,8 @@
     color: #171717;
     max-width: 1920px;
     text-decoration: none;
-    list-style-type: none;                                   
+    list-style-type: none; 
+    scroll-behavior: smooth;                                  
 }
 /* Header-------------------------------------------- */
 .header_mobile {
@@ -66,8 +67,8 @@
     border-radius: 29px;
     padding: 7px 0px 7px 16px;
     height: 20px;
-    background: url("/img/search-ico-png.png") no-repeat 16px 1px;
-    background-size: auto 90%;
+    background: url(/img/search-ico-png.png) no-repeat 16px;
+    background-size: 5.5%;
     width: 464px;
     height: 39px;
     font-style: normal;

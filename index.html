@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/tippy.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header_wrap">
             <div class="header_left">
                 <img src="img/header-svg.svg" alt="">
@@ -52,12 +52,12 @@
                 <li class="sidebar_li"><a href="">ГЛАВНАЯ</a></li>
                 <li class="sidebar_li"><a href="">ПРОДУКЦИЯ</a></li>
                 <li class="sidebar_li"><a href="">УСЛУГИ</a></li>
-                <li class="sidebar_li"><a href="">ДОСТАВКА</a></li>
+                <li class="sidebar_li"><a href="dostavka.html">ДОСТАВКА</a></li>
                 <li class="sidebar_li"><a href="">ПРОИЗВОДСТВО</a></li>
                 <li class="sidebar_li"><a href="">ИНФОРМАЦИЯ</a></li>
                 <li class="sidebar_li"><a href="">КОНТАКТЫ</a></li>
             </ul>
-            <a href="" class="arrow_up"><img src="./img/arrow-up.svg" alt=""></a>
+            <a href="#header" class="arrow_up"><img src="./img/arrow-up.svg" alt=""></a>
         </div>
     </section>
     <section class="slidebar_mob">
@@ -217,7 +217,7 @@
         <section class="spec_offers">
             <div class="spec_offers_wrap">
                 <h2>Спецпредложения</h2>
-                <div class="swiper">
+                <div class="swiper swiper_my">
                     <div class="cards_wrap swiper-wrapper">
                         <div class="cards swiper-slide">
                             <div class="cards_desc">
@@ -226,7 +226,8 @@
                                 <p>(ТЭМ1.35.30.128-01) ТЭ3.14.1291 (ТЭМ1.35.30.129) ТЭМ1.35.30.128-01 (ТЭ3.14.1291, ТГМ3.35.30.109)</p>
                             </div>
                             <div class="cards_price">
-                                <p class="price"><span>1 900,65 Р</span>1 200,25 Р</p>
+                                <span>1 900,65 Р</span>
+                                <p class="price">1 200,25 Р</p>
                                 <a href="" class="buy_btn">Добавить в корзину <img src="./img/spec-offers-bask.svg" alt=""></a>
                             </div>
                         </div>
@@ -237,7 +238,8 @@
                                 <p>ТГМ4.10.46.000 ТГМ4.10.46.000</p>
                             </div>
                             <div class="cards_price">
-                                <p class="price"><span>7 900,65 Р</span>2 200,25 Р</p>
+                                <span>7 900,65 Р</span>
+                                <p class="price">2 200,25 Р</p>
                                 <a href="" class="buy_btn">Добавить в корзину <img src="./img/spec-offers-bask.svg" alt=""></a>
                             </div>
                         </div>
@@ -248,7 +250,8 @@
                                 <p>6.36.30.020 6.36.30.020 (ТЭМ2.35.30.1001)</p>
                             </div>
                             <div class="cards_price">
-                                <p class="price"><span>11 900,65 Р</span>7 100,25 Р</p>
+                                <span>11 900,65 Р</span>
+                                <p class="price">7 100,25 Р</p>
                                 <a href="" class="buy_btn">Добавить в корзину <img src="./img/spec-offers-bask.svg" alt=""></a>
                             </div>
                         </div>
@@ -259,11 +262,11 @@
                                 <p>6.36.30.020 6.36.30.020 (ТЭМ2.35.30.1001)</p>
                             </div>
                             <div class="cards_price">
-                                <p class="price"><span>7 900,65 Р</span>2 200,25 Р</p>
+                                <span>7 900,65 Р</span>
+                                <p class="price">2 200,25 Р</p>
                                 <a href="" class="buy_btn">Добавить в корзину <img src="./img/spec-offers-bask.svg" alt=""></a>
                             </div>
                         </div>
-                        
                         <div class="cards swiper-slide">
                             <div class="cards_desc">
                                 <img src="./img/spec-offers.png" alt="">
@@ -271,21 +274,21 @@
                                 <p>6.36.30.020 6.36.30.020 (ТЭМ2.35.30.1001)</p>
                             </div>
                             <div class="cards_price">
-                                <p class="price"><span>7 900,65 Р</span>2 200,25 Р</p>
+                                <span>7 900,65 Р</span>
+                                <p class="price">2 200,25 Р</p>
                                 <a href="" class="buy_btn">Добавить в корзину <img src="./img/spec-offers-bask.svg" alt=""></a>
                             </div>
+                        </div>                
+                    </div>
+                    <div class="pagination">
+                        <div class="swiper-button-next">
+                            <a href="#!" class="arrows arr-r"><img src="./img/arrow-right.svg" alt=""></a>
+                        </div> 
+                        <div class="swiper-button-prev">
+                            <a href="#!" class="arrows arr-l"><img src="./img/arrow-left.svg" alt=""></a>
                         </div>
                         
                     </div>
-                    <div class="swiper-pagination"></div>
-                    <!-- <div class="pagination">
-                        <div class="pag_left">
-                            <a href="" class="arrows"><img src="./img/arrow-left.svg" alt=""></a>
-                        </div>
-                        <div class="pag_right">
-                            <a href="" class="arrows"><img src="./img/arrow-right.svg" alt=""></a>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </section>

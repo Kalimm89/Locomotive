@@ -70,7 +70,7 @@
 .footer_cont_card_r {
     display: flex;
     flex-wrap: wrap;
-    gap: 37px;
+    gap: 25px;
 }
 .footer_cont_card_r_desc {
     width: 150px;
@@ -79,7 +79,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 165%;
-    margin-bottom: 16px;
     width: 130px;
 }
 .footer_bold {
