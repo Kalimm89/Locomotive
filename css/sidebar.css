@@ -68,6 +68,11 @@
     display: none;
 }
 /* _____________________________________________Adaptive_________________________________________ */
+@media screen and (max-width: 1200px) {
+    .sidebar {
+        display: none;
+    }
+}
 @media screen and (max-width: 768px) {
     .sidebar {
         display: none;

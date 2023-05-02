@@ -70,11 +70,9 @@ new Swiper('.swiper', {
         1330: {
             slidesPerView: 4,
         },
-        1075: {
-            slidesPerView: 2.5,
-        },
-        887: {
-            slidesPerView: 4,
+        770: {
+            slidesPerView: 2.6,
+            spaceBetween: 0,
         }
     },
 });
