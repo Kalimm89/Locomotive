@@ -588,11 +588,11 @@
 .div-svg {
     display: none;
 }
-.menu_adaptive, .small-img, .our-serv-small {
+.menu_adaptive, .small-img, .our-serv-small, .partners_img_adaptive {
     display: none;
 }
 /* _____________________________________________Adaptive_________________________________________ */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
     .main {
         margin-left: 0px;
     }
@@ -839,12 +839,60 @@
     }
     .partners_card {
         flex-direction: column;
+        max-width: 100%;
+        align-items: center;
     }
-    .partners_img_mob {
+    .partners_img, .partners_img_mob {
+        display: none;
+    }
+    .partners_img_adaptive {
+        display: flex;
+    }
+    .partners_img_adaptive img {
+        max-width: 100%;
+        padding: 5px;
+    }
+    .partners_wrap h2 {
+        align-self: start;
+    }
+    .partners_li a {
+        padding-right: 12px;
+        justify-content: center;
+        width: auto;
+        background-color: #171717;
+        color: white;
+        transition: 0.1s;
+    }
+    .arow_hide {
         display: block;
     }
-    .partners_img {
-        display: none;
+/* _____________________________________________geography_________________________________________ */
+    .geography {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 120px;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .geography_wrap {
+        width: 800px;
+        align-items: center;
+        max-width: 100%;
+    }
+    .geo_desc_cards {
+        padding-right: 65px;
+    }
+    .geo_desc_cards:last-child {
+        padding-right: 0px;
+    }
+    .geo_desc {
+        padding: 0px 10px;
+    }
+    .geography_wrap h2 {
+        align-self: start;
+    }
+    .svg-desc {
+        width: 750px;
     }
 }
 
@@ -859,6 +907,27 @@
     .main {
         margin-left: 0px;
     }
+    .menu_adaptive, .small-img, .our-serv-small, .partners_img_adaptive {
+        display: none;
+    }
+    .intro_but {
+        display: flex;
+    }
+    .big-img {
+        display: flex;
+    }
+    .about_cont_img {
+        flex-direction: row;
+    }
+    .about_cont_img {
+        width: auto;
+        height: 124px;
+    }
+
+
+
+
+
     .intro {
         margin-bottom: 136px;
     }
@@ -904,7 +973,7 @@
     }
     /* _____________________________________________About_________________________________________ */
     .about {
-        margin-bottom: 120px;
+        margin-bottom: 220px;
     }
     .about_cont {
         flex-direction: column;
@@ -988,6 +1057,7 @@
     .cbl_desc, .cbr_desc {
         width: auto;
         align-items: end;
+        height: auto;
     }
     .cbl_desc_wrap h3 {
         font-size: 20px;
@@ -1034,6 +1104,7 @@
     }
     .catalog_wrap {
         padding: 0 16px;
+        width: auto;
     }
     .catalog_wrap h2 {
         font-size: 24px;
@@ -1041,6 +1112,7 @@
     }
     .catalog_card {
         flex-direction: column;
+        align-items: normal;
     }
     .catalog_img {
         background-image: url(/img/catalog-img-0.png);
@@ -1070,9 +1142,11 @@
     /* _____________________________________________advantages_________________________________________ */
     .advantages {
         margin-bottom: 64px;
+        display: block;
     }
     .advant_wrap {
         padding: 0 16px;
+        width: auto;
     }
     .advant_wrap h2 {
         font-size: 24px;
@@ -1099,9 +1173,11 @@
     /* _____________________________________________partners_________________________________________ */
     .partners {
         margin-bottom: 128px;
+        display: block;
     }
     .partners_wrap {
         padding: 0 16px;
+        width: auto;
     }
     .partners_wrap h2 {
         font-size: 24px;
@@ -1135,9 +1211,11 @@
     .geography {
         margin-bottom: 73px;
         text-align: center;
+        display: block;
     }
     .geography_wrap {
         padding: 0 16px;
+        width: auto;
     }
     .geography_wrap h2 {
         font-size: 24px;
@@ -1148,6 +1226,9 @@
         flex-direction: column;
         align-items: center;
         gap: 18px;
+    }
+    .geo_desc_cards {
+        padding-right: 0px;
     }
     .geo_desc_cards span {
         font-size: 36px;

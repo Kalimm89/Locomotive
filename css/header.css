@@ -112,7 +112,7 @@
     display: none;
 }
 /* _____________________________________________Adaptive_________________________________________ */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
     .div_phone_ad {
         display: flex;
     }
@@ -154,6 +154,12 @@
 @media screen and (max-width: 768px) {
     .header_left, .header_right {
         display: none;
+    }
+    .div_phone_ad {
+        display: none;
+    }
+    .p-adress {
+        display: block;
     }
     .header_mobile {
         display: flex;

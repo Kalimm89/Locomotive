@@ -68,7 +68,7 @@
     display: none;
 }
 /* _____________________________________________Adaptive_________________________________________ */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
     .sidebar {
         display: none;
     }
