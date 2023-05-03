@@ -64,6 +64,30 @@
     display: none;
 }
 /* _____________________________________adaptive_________________________________________________ */
+@media screen and (max-width: 1400px) {
+    .main {
+        margin-left: 0px;
+    }
+/* _____________________________________________Intro_________________________________________ */
+    .intro {
+        margin-bottom: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    .intro_wrap {
+        margin-top: 39px;
+        gap: 0px;
+        justify-content: center;
+        width: 800px;
+        flex-direction: column;
+    }
+    .intro_img {
+        align-self: center;
+    }
+    .intro_desc {
+        margin-bottom: 40px;
+    }
+}
 @media screen and (max-width: 768px) {
     .main {
         margin-left: 0px;
