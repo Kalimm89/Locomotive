@@ -1,0 +1,202 @@
+.main {
+    margin-left: 400px;
+    position: relative;
+    z-index: 99;
+}
+.sidebar_li_act a {
+    border-style: groove;
+}
+body {
+    overflow-x: hidden;
+}
+/* _____________________________________intro_________________________________________________ */
+.intro {
+}
+.intro_wrap {
+    max-width: 1330px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.intro_desc {
+    max-width: 912px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 26px;
+    padding-top: 32px;
+}
+.intro_nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 68px;
+}
+.intro_nav a, .intro_nav p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 165%;
+    color: #888888;
+    padding-right: 16px;
+}
+.intro_nav a {
+    display: flex;
+    align-items: center;
+}
+.intro_nav a img {
+    margin-right: 16px;
+    height: auto;
+}
+.intro_h2 {
+    margin-bottom: 32px;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 165%;
+}
+.right_side {
+    width: 255px;
+}
+.line {
+    width: 1px;
+    height: 1425px;
+    background-color: black;
+}
+.left_top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+.left_cont h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 135%;
+    margin-bottom: 16px;
+}
+.left_cont p {
+    margin-bottom: 16px;
+}
+.dif_h3 {
+    margin-top: 24px;
+}
+.left_bot {
+    display: flex;
+    justify-content: space-between;
+}
+.cont_det {
+    border-bottom: 1px solid black;
+    padding: 32px 0px 32px 64px;
+    width: 330px;
+}
+.cont_det:last-child {
+    border-bottom: none;
+}
+.cont_det span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 135%;
+    padding-right: 16px;
+}
+.cont_det h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 135%;
+    margin-bottom: 16px;
+}
+.cont_det div {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: baseline;
+}
+/* _____________________________________adaptive_________________________________________________ */
+@media screen and (max-width: 1700px) {
+    .intro_wrap {
+        flex-direction: column;
+    }
+    .line {
+        display: none;
+    }
+    .right_side {
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+    }
+    .left_bot {
+        margin-bottom: 64px;
+    }
+    .cont_det {
+        width: 455px;
+        height: 200px;
+        padding: 0px;
+        padding-top: 24px;
+    }
+    .cont_det_pro, .cont_det_snab {
+        padding-left: 36px;
+        width: 420px;
+    }
+    .cont_det_sbt {
+        border-bottom: 1px solid;
+        border-right: 1px solid;
+        border-top: 1px solid;
+    }
+    .cont_det_snab {
+        border-bottom: 1px solid;
+        border-top: 1px solid;
+    }
+    .cont_det_log {
+        border-right: 1px solid;
+        border-bottom: none;
+    }
+    .cont_det_pro {
+        border-bottom: none;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .main {
+        margin-left: 0px;
+    }
+/* _____________________________________________Intro_________________________________________ */
+    .intro {
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .intro_desc {
+        padding-right: 0px;
+    }
+    .intro_wrap {
+        width: auto;
+        align-items: center;
+        max-width: 100%;
+        padding: 0px 16px;
+    }
+    .intro_desc {
+        margin-bottom: 40px;
+    }
+    .right_side {
+        justify-content: center;
+    }
+    .right_card img, .left_mid img, .left_bot img {
+        max-width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+    .img_house_1 {
+        margin-right: 20px;
+    }
+    .left_mid {
+        margin-bottom: 20px;
+    }
+    .img_house_1, .img_house_2 {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main {
+        margin-left: 0px;
+    }
+
+    .intro_nav, .intro_img, .intro_h2 {
+        display: flex;
+    }
+    .intro_desc {
+        padding: 0px 16px 0px 16px;
+        width: auto;
+    }
+}

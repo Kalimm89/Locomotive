@@ -6,6 +6,9 @@
 .sidebar_li_act a {
     border-style: groove;
 }
+body {
+    overflow-x: hidden;
+}
 /* _____________________________________intro_________________________________________________ */
 .intro {
     margin-bottom: 100px;
@@ -88,6 +91,7 @@
         justify-content: center;
         width: 800px;
         flex-direction: column;
+        max-width: 100%;
     }
     .intro_img {
         align-self: center;
@@ -100,11 +104,11 @@
     .main {
         margin-left: 0px;
     }
-    .intro_nav_mob, .intro_img_mob {
+    .intro_img_mob {
         display: block;
     }
     .intro_nav, .intro_img, .intro_h2 {
-        display: none;
+        display: flex;
     }
     .intro_desc {
         padding: 0px 16px 0px 16px;
@@ -122,9 +126,6 @@
         line-height: 165%;
         padding-right: 16px;
         padding-left: 10px;
-    }
-    .intro_img_mob {
-        margin-bottom: 32px;
     }
     .desc_p {
         margin-bottom: 32px;

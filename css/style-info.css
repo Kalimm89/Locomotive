@@ -6,6 +6,9 @@
 .sidebar_li_act a {
     border-style: groove;
 }
+body {
+    overflow-x: hidden;
+}
 /* _____________________________________intro_________________________________________________ */
 .intro {
     margin-bottom: 100px;
@@ -89,6 +92,7 @@
     border: 1px solid #171717;
     border-radius: 30px;
     padding: 4px 16px;
+    height: 100%;
 }
 .catalog_li_a:hover {
     background-color: #171717;
@@ -102,7 +106,7 @@
 }
 /* --------------------------------------------ustav----------------------------------------------- */
 .intro_card_doc_ustav {
-    width: 600px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -118,9 +122,15 @@
 .docs p {
     margin-left: 20px;
 }
+.intro_card_doc_vakan_mob, .intro_card_doc_ustav_mob {
+    display: none;
+}
+.li_ustav, .li_vakan {
+    display: none;
+}
 /* ------------------------------------------vakan------------------------------------------------- */
 .intro_card_doc_vakan {
-    width: 600px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -149,4 +159,49 @@
 }
 .catalog_li_a_act::before {
     content: 'Скрыть';
+}
+/* ------------------------------------------Adaptive------------------------------------------------- */
+@media screen and (max-width: 1400px) {
+    .main {
+        margin-left: 0px;
+    }
+    .intro_card {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .main {
+        margin-left: 0px;
+    }
+    .intro_card {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+@media screen and (max-width: 1034px) {
+    .ul_list {
+        margin: 0 auto;
+    }
+    .intro_card_left {
+        order: -1;
+        margin: 0 auto;
+        max-width: 100%
+    }
+    .intro_card_doc_vakan_mob, .intro_card_doc_ustav_mob {
+        /* display: flex; */
+        flex-direction: column;
+        gap: 16px;
+        display: none;
+    }
+    .li_ustav, .li_vakan {
+        border-bottom: none;
+        display: none;
+    }
+    .show {
+        display: flex;
+    }
+    .hide {
+        display: none;
+    }
 }

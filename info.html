@@ -51,12 +51,13 @@
             </div>
         </div>
     </header>
+    <!-- Левое меню -->
     <section class="sidebar">
         <div class="sidebar_wrap">
             <ul class="sidebar_list">
                 <li class="sidebar_li"><a href="/">ГЛАВНАЯ</a></li>
                 <li class="sidebar_li"><a href="products.html">ПРОДУКЦИЯ</a></li>
-                <li class="sidebar_li"><a href="">УСЛУГИ</a></li>
+                <li class="sidebar_li"><a href="uslugi.html">УСЛУГИ</a></li>
                 <li class="sidebar_li"><a href="dostavka.html">ДОСТАВКА</a></li>
                 <li class="sidebar_li"><a href="">ПРОИЗВОДСТВО</a></li>
                 <li class="sidebar_li sidebar_li_act"><a href="info.html">ИНФОРМАЦИЯ</a></li>
@@ -65,6 +66,7 @@
             <a href="#header" class="arrow_up"><img src="./img/arrow-up.svg" alt=""></a>
         </div>
     </section>
+    <!-- Меню внизу при адаптиве от 768 -->
     <section class="slidebar_mob">
         <div class="slidebar_mob_wrap">
             <a href="#!" class="menu_mob burger">Меню<img src="./img/slidebar-burger.png" alt=""></a>
@@ -79,17 +81,19 @@
             </a>
         </div>
     </section>
+    <!-- Меню под хедером при адаптиве от 1400 -->
     <section class="menu_adaptive">
         <ul class="menu_adaptive_list">
             <li class="menu_adaptive_li"><a href="/">Главная</a></li>
             <li class="menu_adaptive_li"><a href="products.html">Продукция</a></li>
-            <li class="menu_adaptive_li"><a href="">Услуги</a></li>
+            <li class="menu_adaptive_li"><a href="uslugi.html">Услуги</a></li>
             <li class="menu_adaptive_li"><a href="dostavka.html">Доставка</a></li>
             <li class="menu_adaptive_li"><a href="">Производство</a></li>
-            <li class="menu_adaptive_li"><a href="">Информация</a></li>
+            <li class="menu_adaptive_li"><a href="info.html">Информация</a></li>
             <li class="menu_adaptive_li"><a href="">Контакты</a></li>
         </ul>
     </section>
+    <!-- Выпадающее меню справа -->
     <nav class="menu_nav">
             <div class="menu_name">
                 <h3>Меню</h3>
@@ -102,19 +106,19 @@
                     <a href="/" class="main_lev">ГЛАВНАЯ</a>
                 </li>
                 <li class="menu_item">
-                    <a href="/" class="main_lev">ПРОДУКЦИЯ</a>
+                    <a href="products.html" class="main_lev">ПРОДУКЦИЯ</a>
                 </li>
                 <li class="menu_item">
-                    <a href="/" class="main_lev">УСЛУГИ</a>
+                    <a href="uslugi.html" class="main_lev">УСЛУГИ</a>
                 </li>
                 <li class="menu_item">
-                    <a href="/" class="main_lev">ДОСТАВКА</a>
+                    <a href="dostavka.html" class="main_lev">ДОСТАВКА</a>
                 </li>
                 <li class="menu_item">
                     <a href="/" class="main_lev">ПРОИЗВОДСТВО</a>
                 </li>
                 <li class="menu_item">
-                    <a href="/" class="main_lev">ИНФОРМАЦИЯ</a>
+                    <a href="info.html" class="main_lev">ИНФОРМАЦИЯ</a>
                 </li>
                 <li class="menu_item">
                     <a href="/" class="main_lev">КОНТАКТЫ</a>
@@ -125,26 +129,66 @@
             <section class="intro">
                 <div class="intro_wrap">
                     <div class="intro_nav">
-                        <a href=""><img src="../img/dostavka/arrow-left-grey.png" alt="">Главная</a>
+                        <a href="/"><img src="../img/dostavka/arrow-left-grey.png" alt="">Главная</a>
                         <p>|</p>
                         <a href="">Информация</a>
                     </div>
                     <div class="intro_card">
                         <h1>Информация</h1>
                         <div class="intro_card_wrap">
-                            <div class="intro_card_left">
-                                <p>Для наших клиентов в этом разделе содержится полная информация о компании. 
-                                    Вы можете ознакомиться с реквизитами, уставом, отчетностью и 
-                                    бухгалтерскими документами. Все материалы скачиваются.</p>
-                                <p>ООО “Промоборудование” также ищет сотрудников в свою организацию на 
-                                    постоянную основу. О том какие вакансии на сегодняшний день открыты 
-                                    можно найти <span>в разделе “Вакансии”</span>.</p>
-                            </div>
                             <div class="intro_card_right">
                             <ul class="ul_list">
                                 <li class="li_list">
                                     <p>УСТАВНЫЕ ДОКУМЕНТЫ</p>
                                     <a href="#!" class="catalog_li_a ustav_but"></a>
+                                </li>
+                                <li class="li_list li_ustav">
+                                    <div class="intro_card_doc_ustav_mob">
+                                        <a href="" class="docs">
+                                            <img src="../img/info/doc-ico.svg" alt="">
+                                            <p>Выписка из ЕГРЮЛ</p>
+                                        </a>
+                                        <a href="" class="docs">
+                                            <img src="../img/info/doc-ico.svg" alt="">
+                                            <p>Договор аренды офиса с 2022-2023 год</p>
+                                        </a>
+                                        <a href="" class="docs">
+                                            <img src="../img/info/doc-ico.svg" alt="">
+                                            <p>ИНН</p>
+                                        </a>
+                                        <a href="" class="docs">
+                                            <img src="../img/info/doc-ico.svg" alt="">
+                                            <p>Сведения о видах экономической деятельности</p>
+                                        </a>
+                                        <a href="" class="docs">
+                                            <img src="../img/info/doc-ico.svg" alt="">
+                                            <p>ОГРН</p>
+                                        </a>
+                                        <a href="" class="docs">
+                                            <img src="../img/info/doc-ico.svg" alt="">
+                                            <p>Протокол №8 о продлении полномочий</p>
+                                        </a>
+                                        <a href="" class="docs">
+                                            <img src="../img/info/doc-ico.svg" alt="">
+                                            <p>Система налогообложения</p>
+                                        </a>
+                                        <a href="" class="docs">
+                                            <img src="../img/info/doc-ico.svg" alt="">
+                                            <p>Сведения об основных характеристиках объекта недвижимости</p>
+                                        </a>
+                                        <a href="" class="docs">
+                                            <img src="../img/info/doc-ico.svg" alt="">
+                                            <p>Устав ООО "Промоборудование"</p>
+                                        </a>
+                                        <a href="" class="docs">
+                                            <img src="../img/info/doc-ico.svg" alt="">
+                                            <p>Приказ о назначении главного бухгалтера</p>
+                                        </a>
+                                        <a href="" class="docs">
+                                            <img src="../img/info/doc-ico.svg" alt="">
+                                            <p>Приказ о назначении главного бухгалтера</p>
+                                        </a>
+                                    </div>
                                 </li>
                                 <li class="li_list">
                                     <p>РЕКВИЗИТЫ</p>
@@ -162,7 +206,35 @@
                                     <p>ВАКАНСИИ</p>
                                     <a href="#!" class="catalog_li_a vakan_but"></a>
                                 </li>
+                                <li class="li_list li_vakan">
+                                    <div class="intro_card_doc_vakan_mob">
+                                        <div class="vakan">
+                                            <img src="../img/info/vakan-ico.svg" alt="">
+                                            <p>Токарь 5-6-го разряда, от 60.000 рублей</p>
+                                        </div>
+                                        <div class="vakan">
+                                            <img src="../img/info/vakan-ico.svg" alt="">
+                                            <p>Слесарь-ремонтник металлорежущих станков, от 35.000 рублей</p>
+                                        </div>
+                                        <div class="vakan">
+                                            <img src="../img/info/vakan-ico.svg" alt="">
+                                            <p>Менеджер отдела продаж, от 35.000 рублей</p>
+                                        </div>
+                                        <div class="vakan">
+                                            <img src="../img/info/vakan-ico.svg" alt="">
+                                            <p>Менеджер отдела снабжения, от 35.000 рублей</p>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
+                            </div>
+                            <div class="intro_card_left">
+                                <p>Для наших клиентов в этом разделе содержится полная информация о компании. 
+                                    Вы можете ознакомиться с реквизитами, уставом, отчетностью и 
+                                    бухгалтерскими документами. Все материалы скачиваются.</p>
+                                <p>ООО “Промоборудование” также ищет сотрудников в свою организацию на 
+                                    постоянную основу. О том какие вакансии на сегодняшний день открыты 
+                                    можно найти <span>в разделе “Вакансии”</span>.</p>
                             </div>
                             <div class="intro_card_doc_ustav">
                                 <a href="" class="docs">
@@ -212,15 +284,15 @@
                             </div>
                             <div class="intro_card_doc_vakan">
                                 <div class="vakan">
-                                    <img src="../img/info/doc-ico.svg" alt="">
+                                    <img src="../img/info/vakan-ico.svg" alt="">
                                     <p>Токарь 5-6-го разряда, от 60.000 рублей</p>
                                 </div>
                                 <div class="vakan">
-                                    <img src="../img/info/doc-ico.svg" alt="">
+                                    <img src="../img/info/vakan-ico.svg" alt="">
                                     <p>Слесарь-ремонтник металлорежущих станков, от 35.000 рублей</p>
                                 </div>
                                 <div class="vakan">
-                                    <img src="../img/info/doc-ico.svg" alt="">
+                                    <img src="../img/info/vakan-ico.svg" alt="">
                                     <p>Менеджер отдела продаж, от 35.000 рублей</p>
                                 </div>
                                 <div class="vakan">

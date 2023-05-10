@@ -936,9 +936,6 @@
         width: 270px;
         margin-top: 0px;
     }
-    .intro_img-mob img {
-        margin-bottom: 24px;
-    }
     .intro_but {
         flex-direction: column;
         gap: 30px;
