@@ -112,6 +112,44 @@
     display: none;
 }
 /* _____________________________________________Adaptive_________________________________________ */
+@media screen and (max-width: 1620px) {
+    .card_wrap {
+        justify-content: center;
+    }
+    .ul_main {
+        width: 300px;
+    }
+    .menu_wrap {
+        padding-left: 16px;
+    }
+    .div_phone {
+        width: 200px;
+        margin-right: 0px;
+    }
+    .p-adress {
+        width: 170px;
+        margin-right: 0px;
+    }
+    .header_right {
+        width: 800px;
+        justify-content: space-between;
+    }
+    .header_wrap {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .intro_nav {
+        padding-left: 16px;
+    }
+    .footer_wrap {
+        flex-direction: column;
+        padding: 100px 0px 0px 0px;
+        gap: 64px;
+        margin-bottom: 100px;
+        width: 800px;
+        margin-left: 200px;
+    }
+}
 @media screen and (max-width: 1400px) {
     .div_phone_ad {
         display: flex;

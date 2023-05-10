@@ -3,6 +3,9 @@
     position: relative;
     z-index: 99;
 }
+.sidebar_li_act a {
+    border-style: groove;
+}
 /* _____________________________________intro_________________________________________________ */
 .intro {
     margin-bottom: 100px;
@@ -30,8 +33,13 @@
     color: #888888;
     padding-right: 16px;
 }
+.intro_nav a {
+    display: flex;
+    align-items: center;
+}
 .intro_nav a img {
-    padding-right: 16px;
+    margin-right: 16px;
+    height: auto;
 }
 .intro-links {
     display: flex;

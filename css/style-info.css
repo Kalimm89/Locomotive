@@ -1,0 +1,152 @@
+.main {
+    margin-left: 400px;
+    position: relative;
+    z-index: 99;
+}
+.sidebar_li_act a {
+    border-style: groove;
+}
+/* _____________________________________intro_________________________________________________ */
+.intro {
+    margin-bottom: 100px;
+}
+.intro_wrap {
+    max-width: 1330px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+.intro_nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 68px;
+}
+.intro_nav a, .intro_nav p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 165%;
+    color: #888888;
+    padding-right: 16px;
+}
+.intro_nav a {
+    display: flex;
+    align-items: center;
+}
+.intro_nav a img {
+    margin-right: 16px;
+    height: auto;
+}
+.intro_card {
+    display: flex;
+    flex-direction: column;
+}
+.intro_card h1 {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 165%;
+    margin-bottom: 44px;
+}
+.intro_card_wrap {
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+.intro_card_left {
+    max-width: 537px;
+}
+.intro_card_left p {
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 165%;
+}
+.intro_card_left span {
+    border-bottom: 1px solid black;
+}
+.ul_list {
+    max-width: 725px;
+}
+.intro_card_right {
+    flex-grow: 1;
+}
+.li_list {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #171717;
+    padding-bottom: 13px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 165%;
+}
+.catalog_li_a::before {
+    content: 'Перейти';
+}
+.catalog_li_a {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 135%;
+    border: 1px solid #171717;
+    border-radius: 30px;
+    padding: 4px 16px;
+}
+.catalog_li_a:hover {
+    background-color: #171717;
+    color: white;
+}
+
+
+.intro_card_right_act {
+    transform: translateX(-84%);
+    background-color: white;
+}
+/* --------------------------------------------ustav----------------------------------------------- */
+.intro_card_doc_ustav {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    display: none;
+}
+.docs {
+    display: flex;
+    box-shadow: 0px 0px 4px rgba(75, 75, 75, 0.25);
+    border-radius: 8px;
+    padding: 4px 12px;
+    align-items: center;
+}
+.docs p {
+    margin-left: 20px;
+}
+/* ------------------------------------------vakan------------------------------------------------- */
+.intro_card_doc_vakan {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    display: none;
+}
+.vakan {
+    display: flex;
+    padding: 4px 12px;
+    align-items: center;
+}
+.vakan p {
+    margin-left: 20px;
+}
+/* ------------------------------------------------------------------------------------------- */
+.show {
+    display: flex;
+}
+.hide {
+    display: none;
+}
+.catalog_li_a_act {
+    background-color: #171717;
+    color: white;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+.catalog_li_a_act::before {
+    content: 'Скрыть';
+}

@@ -9,6 +9,9 @@
     position: relative;
     z-index: 99;
 }
+.sidebar_li_act a {
+    border-style: groove;
+}
 /* _____________________________________intro_________________________________________________ */
 .intro {
     margin-bottom: 200px;

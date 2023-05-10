@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dostavka</title>
+    <title>Info</title>
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display?styles=98774,98777,98776,98772,98773,98775,98770,98771,98769" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/oswald-4?styles=21468" rel="stylesheet">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/style-dostavka.css">
+    <link rel="stylesheet" href="css/style-info.css">
 </head>
 <body>
     <header class="header" id="header">
@@ -56,10 +56,10 @@
             <ul class="sidebar_list">
                 <li class="sidebar_li"><a href="/">ГЛАВНАЯ</a></li>
                 <li class="sidebar_li"><a href="products.html">ПРОДУКЦИЯ</a></li>
-                <li class="sidebar_li"><a href="uslugi.html">УСЛУГИ</a></li>
-                <li class="sidebar_li sidebar_li_act"><a href="dostavka.html">ДОСТАВКА</a></li>
+                <li class="sidebar_li"><a href="">УСЛУГИ</a></li>
+                <li class="sidebar_li"><a href="dostavka.html">ДОСТАВКА</a></li>
                 <li class="sidebar_li"><a href="">ПРОИЗВОДСТВО</a></li>
-                <li class="sidebar_li"><a href="">ИНФОРМАЦИЯ</a></li>
+                <li class="sidebar_li sidebar_li_act"><a href="info.html">ИНФОРМАЦИЯ</a></li>
                 <li class="sidebar_li"><a href="">КОНТАКТЫ</a></li>
             </ul>
             <a href="#header" class="arrow_up"><img src="./img/arrow-up.svg" alt=""></a>
@@ -124,44 +124,111 @@
         <main class="main">
             <section class="intro">
                 <div class="intro_wrap">
-                    <div class="intro_desc">
-                        <div class="intro_nav">
-                            <a href=""><img src="./img/dostavka/arrow-left-grey.png" alt="">Главная</a>
-                            <p>|</p>
-                            <a href="">Доставка</a>
-                        </div>
-                        <div class="intro_nav_mob">
-                            <a href=""><img src="./img/dostavka/arrow-left-black.svg" alt=""></a>
-                            <a href="">Доставка</a>
-                        </div>
-                        <div class="intro_img_mob">
-                            <img src="./img/dostavka/intro-img-mob.png" alt="">
-                        </div>
-                        <h2 class="intro_h2">Доставка</h2>
-                        <p class="desc_p">Цена на доставку груза рассчитывается по тарифам выбранной вами
-                            транспортной компании исходя из веса, объёма груза, а также расстояния доставки.
-                            Для некоторых объёмных и тяжёлых грузов более выгодна доставка отдельным транспортом.
-                            Наш логист всегда будет рад вам помочь.</p>
-                        <div class="intro-links">
-                            <div class="intro-links-cards">
-                                <img src="./img/dostavka/intro-links-1-svg.svg" alt="">
-                            </div>
-                            <div class="intro-links-cards">
-                                <img src="./img/dostavka/intro-links-2-svg.svg" alt="">
-                            </div>
-                            <div class="intro-links-cards">
-                                <img src="./img/dostavka/intro-links-3-svg.svg" alt="">
-                            </div>
-                            <div class="intro-links-cards">
-                                <img src="./img/dostavka/intro-links-4-svg.svg" alt="">
-                            </div>
-                            <div class="intro-links-cards">
-                                <img src="./img/dostavka/intro-links-5-svg.svg" alt="">
-                            </div>
-                        </div>
+                    <div class="intro_nav">
+                        <a href=""><img src="../img/dostavka/arrow-left-grey.png" alt="">Главная</a>
+                        <p>|</p>
+                        <a href="">Информация</a>
                     </div>
-                    <div class="intro_img">
-                        <img src="./img/dostavka/intro-img.png" alt="">
+                    <div class="intro_card">
+                        <h1>Информация</h1>
+                        <div class="intro_card_wrap">
+                            <div class="intro_card_left">
+                                <p>Для наших клиентов в этом разделе содержится полная информация о компании. 
+                                    Вы можете ознакомиться с реквизитами, уставом, отчетностью и 
+                                    бухгалтерскими документами. Все материалы скачиваются.</p>
+                                <p>ООО “Промоборудование” также ищет сотрудников в свою организацию на 
+                                    постоянную основу. О том какие вакансии на сегодняшний день открыты 
+                                    можно найти <span>в разделе “Вакансии”</span>.</p>
+                            </div>
+                            <div class="intro_card_right">
+                            <ul class="ul_list">
+                                <li class="li_list">
+                                    <p>УСТАВНЫЕ ДОКУМЕНТЫ</p>
+                                    <a href="#!" class="catalog_li_a ustav_but"></a>
+                                </li>
+                                <li class="li_list">
+                                    <p>РЕКВИЗИТЫ</p>
+                                    <a href="#!" class="catalog_li_a"></a>
+                                </li>
+                                <li class="li_list">
+                                    <p>БУХГАЛТЕРСКИЕ ДОКУМЕНТЫ</p>
+                                    <a href="#!" class="catalog_li_a"></a>
+                                </li>
+                                <li class="li_list">
+                                    <p>ДРУГИЕ ДОКУМЕНТЫ</p>
+                                    <a href="#!" class="catalog_li_a"></a>
+                                </li>
+                                <li class="li_list">
+                                    <p>ВАКАНСИИ</p>
+                                    <a href="#!" class="catalog_li_a vakan_but"></a>
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="intro_card_doc_ustav">
+                                <a href="" class="docs">
+                                    <img src="../img/info/doc-ico.svg" alt="">
+                                    <p>Выписка из ЕГРЮЛ</p>
+                                </a>
+                                <a href="" class="docs">
+                                    <img src="../img/info/doc-ico.svg" alt="">
+                                    <p>Договор аренды офиса с 2022-2023 год</p>
+                                </a>
+                                <a href="" class="docs">
+                                    <img src="../img/info/doc-ico.svg" alt="">
+                                    <p>ИНН</p>
+                                </a>
+                                <a href="" class="docs">
+                                    <img src="../img/info/doc-ico.svg" alt="">
+                                    <p>Сведения о видах экономической деятельности</p>
+                                </a>
+                                <a href="" class="docs">
+                                    <img src="../img/info/doc-ico.svg" alt="">
+                                    <p>ОГРН</p>
+                                </a>
+                                <a href="" class="docs">
+                                    <img src="../img/info/doc-ico.svg" alt="">
+                                    <p>Протокол №8 о продлении полномочий</p>
+                                </a>
+                                <a href="" class="docs">
+                                    <img src="../img/info/doc-ico.svg" alt="">
+                                    <p>Система налогообложения</p>
+                                </a>
+                                <a href="" class="docs">
+                                    <img src="../img/info/doc-ico.svg" alt="">
+                                    <p>Сведения об основных характеристиках объекта недвижимости</p>
+                                </a>
+                                <a href="" class="docs">
+                                    <img src="../img/info/doc-ico.svg" alt="">
+                                    <p>Устав ООО "Промоборудование"</p>
+                                </a>
+                                <a href="" class="docs">
+                                    <img src="../img/info/doc-ico.svg" alt="">
+                                    <p>Приказ о назначении главного бухгалтера</p>
+                                </a>
+                                <a href="" class="docs">
+                                    <img src="../img/info/doc-ico.svg" alt="">
+                                    <p>Приказ о назначении главного бухгалтера</p>
+                                </a>
+                            </div>
+                            <div class="intro_card_doc_vakan">
+                                <div class="vakan">
+                                    <img src="../img/info/doc-ico.svg" alt="">
+                                    <p>Токарь 5-6-го разряда, от 60.000 рублей</p>
+                                </div>
+                                <div class="vakan">
+                                    <img src="../img/info/doc-ico.svg" alt="">
+                                    <p>Слесарь-ремонтник металлорежущих станков, от 35.000 рублей</p>
+                                </div>
+                                <div class="vakan">
+                                    <img src="../img/info/doc-ico.svg" alt="">
+                                    <p>Менеджер отдела продаж, от 35.000 рублей</p>
+                                </div>
+                                <div class="vakan">
+                                    <img src="../img/info/vakan-ico.svg" alt="">
+                                    <p>Менеджер отдела снабжения, от 35.000 рублей</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -236,5 +303,6 @@
         </div>
     </footer>
     <script src="./js/main.js" ></script>
+    <script src="./js/info.js" ></script>
 </body>
 </html>
