@@ -1,0 +1,119 @@
+.main {
+    margin-left: 400px;
+    position: relative;
+    z-index: 99;
+}
+.sidebar_li_act a {
+    border-style: groove;
+}
+/* _____________________________________intro_________________________________________________ */
+.intro {
+    margin-bottom: 120px;
+}
+.intro_wrap {
+    max-width: 1330px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+.intro_nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 68px;
+}
+.intro_nav a, .intro_nav p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 165%;
+    color: #888888;
+    padding-right: 16px;
+}
+.intro_nav a {
+    display: flex;
+    align-items: center;
+}
+.intro_nav a img {
+    margin-right: 16px;
+    height: auto;
+}
+.intro_h2 {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 165%;
+    margin-bottom: 24px;
+}
+.serv_card_wrap {
+    display: flex;
+    gap: 60px;
+}
+.pro_left p {
+    width: 413px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 165%;
+    margin-bottom: 20px;
+}
+.pro_right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.img_mob, .pro_right_mob {
+    display: none;
+}
+/* _____________________________________________Adaptive_________________________________________ */
+@media screen and (max-width: 1400px) {
+    .main {
+        margin-left: 0px;
+    }
+    .service_wrap {
+        padding-left: 16px;
+    }
+    .pro_right {
+        height: 100%;
+    }
+    .pro_img {
+        max-width: 400px;
+    }
+    .pro_img img {
+        width: 100%;
+        height: auto;
+    }
+    .img_des {
+        display: none;
+    }
+    .img_mob {
+        display: block;
+    }
+}
+@media screen and (max-width: 768px) {
+    .serv_card_wrap {
+        flex-direction: column;
+    }
+    .pro_left p {
+        width: auto;
+    }
+    .pro_right {
+        gap: 10px;
+        width: 400px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .pro_right_mob {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pro_right {
+        width: auto;
+    }
+    .pro_right_mob img {
+        max-width: 100%;
+        object-fit: cover;
+        width: 45%;
+        padding: 5px;
+    }
+    .img_mob {
+        display: none;
+    }
+}
+

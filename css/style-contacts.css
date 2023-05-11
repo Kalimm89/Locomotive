@@ -146,6 +146,9 @@ body {
     .cont_det_pro {
         border-bottom: none;
     }
+    .intro_nav {
+        padding-left: 0px;
+    }
 }
 @media screen and (max-width: 1400px) {
     .main {
@@ -177,9 +180,9 @@ body {
         display: block;
         object-fit: cover;
     }
-    .img_house_1 {
+    /* .img_house_1 {
         margin-right: 20px;
-    }
+    } */
     .left_mid {
         margin-bottom: 20px;
     }
@@ -187,16 +190,55 @@ body {
         width: 50%;
     }
 }
+@media screen and (max-width: 958px) {
+    .right_side {
+        flex-direction: column;
+    }
+    .cont_det_sbt {
+        border: none;
+    }
+    .cont_det_pro, .cont_det_snab {
+        padding-left: 0px;
+        width: auto;
+    }
+    .cont_det_log {
+        border-right: none;
+    }
+    .cont_det_pro {
+        border-top: 1px solid;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .main {
         margin-left: 0px;
     }
-
     .intro_nav, .intro_img, .intro_h2 {
         display: flex;
     }
     .intro_desc {
         padding: 0px 16px 0px 16px;
         width: auto;
+    }
+    .right_card {
+        display: none;
+    }
+    .cont_det {
+        width: 400px;
+        padding: 10px;
+    }
+    .intro_nav {
+        padding-top: 16px;
+    }
+}
+@media screen and (max-width: 434px) {
+    .left_mid img {
+        width: 320px;
+    }
+    .intro_wrap {
+        align-items: flex-start;
+    }
+    .cont_det {
+        width: 300px;
     }
 }
