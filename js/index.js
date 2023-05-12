@@ -43,14 +43,18 @@ new Swiper('.swiper', {
       },
     grabCursor: true,
     slidesPerView: 1,
-    spaceBetween: 5,
     breakpoints: {
-        1330: {
+        1650: {
             slidesPerView: 4,
         },
+        1250: {
+            slidesPerView: 3,
+        },
+        800: {
+            slidesPerView: 2,
+        },
         770: {
-            slidesPerView: 2.6,
-            spaceBetween: 0,
+            slidesPerView: 1,
         }
     },
 });

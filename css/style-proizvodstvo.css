@@ -6,6 +6,9 @@
 .sidebar_li_act a {
     border-style: groove;
 }
+body {
+    overflow-x: hidden;
+}
 /* _____________________________________intro_________________________________________________ */
 .intro {
     margin-bottom: 120px;

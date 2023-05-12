@@ -1,0 +1,201 @@
+.main {
+    margin-left: 400px;
+    position: relative;
+    z-index: 99;
+}
+.sidebar_li_act a {
+    border-style: groove;
+}
+body {
+    overflow-x: hidden;
+}
+/* _____________________________________intro_________________________________________________ */
+.intro {
+    margin-bottom: 120px;
+}
+.intro_wrap {
+    max-width: 1330px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+.intro_nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 68px;
+}
+.intro_nav a, .intro_nav p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 165%;
+    color: #888888;
+    padding-right: 16px;
+}
+.intro_nav a {
+    display: flex;
+    align-items: center;
+}
+.intro_nav a img {
+    margin-right: 16px;
+    height: auto;
+}
+.intro_h2 {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 165%;
+    margin-bottom: 24px;
+}
+.service_wrap {
+    display: flex;
+    flex-direction: column;
+}
+.serv_card_wrap {
+    display: flex;
+    gap: 87px;
+}
+.p_wrap p {
+    margin-bottom: 30px;
+}
+.serv_img_mob {
+    display: none;
+}
+.serv_form {
+    width: 528px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(75, 75, 75, 0.25);
+    border-radius: 24px;
+    padding: 24px 36px;
+}
+.serv_form h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 135%;
+    margin-bottom: 24px;
+}
+.serv_form p {
+    margin-bottom: 24px;
+}
+.serv_inp {
+    width: 204px;
+    border: none;
+    border-bottom: 1px solid #171717;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 165%;
+    margin-bottom: 40px;
+}
+.inputs_wrap {
+    display: flex;
+    gap: 40px;
+}
+.inp_name_phone {
+    display: flex;
+    flex-direction: column;
+}
+.file_ad {
+    display: flex;
+    border-radius: 6px;
+    padding: 4px 7px;
+    width: 183px;
+    height: 32px;
+    margin-bottom: 45px;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    border: 2px solid rgba(75, 75, 75, 0.25);
+}
+.file_ad:hover {
+    box-shadow: 0px 0px 4px rgba(75, 75, 75, 0.25);
+}
+input {
+    outline: none;
+}
+textarea {
+	width: 204px;
+    border: none;
+    border-bottom: 1px solid;
+    resize: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    outline: none;
+    margin-bottom: 37px;
+    height: 93.5px;
+}
+/* _____________________________________________Adaptive_________________________________________ */
+@media screen and (max-width: 1650px) {
+  .serv_img {
+    display: none;
+  }
+  .serv_img_mob {
+    display: block;
+  }
+  .p_wrap p {
+    width: 600px;
+  }
+  .p_wrap {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 64px;
+  }
+  .serv_form {
+    margin: 0 auto;
+    padding: 24px 68px 24px 148px;
+  }
+}
+@media screen and (max-width: 1400px) {
+    .main {
+        margin-left: 0px;
+    }
+    .service_wrap {
+        padding-left: 16px;
+    }
+    
+}
+@media screen and (max-width: 1075px) {
+    .p_wrap p {
+        width: auto;
+    }
+}
+@media screen and (max-width: 790px) {
+    .service_wrap {
+        padding: 0px 16px;
+    }
+    .p_wrap {
+        flex-direction: column;
+    }
+    .serv_form {
+        padding: 24px 36px;
+        width: fit-content;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .inputs_wrap {
+        flex-direction: column;
+    }
+    .serv_desc {
+        display: flex;
+        flex-direction: column;
+    }
+    .serv_img_mob img {
+        max-width: 100%;
+    }
+    .file_ad {
+        align-self: flex-end;
+    }
+    textarea {
+        height: 5em;
+    }
+    .inp_problem {
+        display: flex;
+        flex-direction: column;
+    }
+    .serv_inp, textarea {
+        max-width: 270px;
+        width: auto;
+    }
+}
+

@@ -12,6 +12,9 @@
 .sidebar_li_act a {
     border-style: groove;
 }
+body {
+    overflow-x: hidden;
+}
 /* _____________________________________intro_________________________________________________ */
 .intro {
     margin-bottom: 200px;
@@ -595,6 +598,72 @@
     display: none;
 }
 /* _____________________________________________Adaptive_________________________________________ */
+@media screen and (max-width: 1650px) {
+    .intro_info {
+        padding-top: 0px;
+    }
+    .intro_but {
+        flex-wrap: wrap;
+    }
+    .p_desc {
+        max-width: 510px;
+    }
+    .our_serv {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 120px;
+    }
+    .out_serv_wrap {
+        width: 800px;
+        align-items: center;
+    }
+    .out_serv_wrap h2 {
+        align-self: baseline;
+    }
+    .card_bot {
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+    }
+    .card_top {
+        width: 700px;
+        padding: 24px;
+        gap: 20px;
+    }
+    .our-serv-big {
+        display: none;
+    }
+    .our-serv-small {
+        display: block;
+    }
+    .ct_desc p {
+        width: auto;
+        margin-bottom: 50px;
+    }
+    .ct_desc h3 {
+        font-size: 20px;
+    }
+    .card_bot_l, .card_bot_r {
+        padding: 24px;
+        gap: 20px;
+        width: 700px;
+    }
+    .cbr_desc, .cbl_desc {
+        width: auto;
+        justify-content: space-between;
+        height: 270px;
+    }
+    .cbl_desc_wrap p {
+        margin-bottom: 50px;
+    }
+    .cbl_desc_wrap h3 {
+        font-size: 20px;
+    }
+    .cards_wrap {
+        max-width: 1010px;
+    }
+}
+
 @media screen and (max-width: 1400px) {
     .main {
         margin-left: 0px;
@@ -874,13 +943,11 @@
         width: 750px;
     }
 }
-
-
-
-
-
-
-
+@media screen and (max-width: 1250px) {
+    .cards_wrap {
+        max-width: 670px;
+    }
+}
 @media screen and (max-width: 768px) {
     /* _____________________________________________Intro_________________________________________ */
     .main {
@@ -902,11 +969,6 @@
         width: auto;
         height: 124px;
     }
-
-
-
-
-
     .intro {
         margin-bottom: 136px;
     }
@@ -1061,6 +1123,7 @@
     .cards_wrap {
         gap: 16px;
         align-items: center;
+        max-width: 325px;
     }
     .pagination {
         display: flex;
@@ -1070,9 +1133,6 @@
         bottom: 55px;
         left: 160px;
         width: 130px;
-    }
-    .swiper_my {
-        width: 330px;
     }
     /* _____________________________________________catalog_________________________________________ */
     .catalog {
