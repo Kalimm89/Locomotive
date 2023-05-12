@@ -1,9 +1,3 @@
-@font-face {
-    font-family: "SFProDisplay-Thin"; 
-    src: url("./SFProDisplay-Thin.woff") format("woff"); 
-    font-style: normal; 
-    font-weight: normal; 
-}
 .main {
     margin-left: 400px;
     position: relative;
@@ -35,7 +29,6 @@ body {
     font-size: 83px;
     line-height: 130%;
     font-family: 'SFProDisplay-Thin';
-    font-style: normal;
 }
 .h1_p {
     font-family: 'Oswald';

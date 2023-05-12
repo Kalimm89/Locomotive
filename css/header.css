@@ -2,7 +2,9 @@
     padding: 0px;
     margin: 0px;
     text-decoration: none;
-    font-family: 'SF Pro Display', sans-serif;  
+    font-family: 'SF-Pro-Display';  
+    font-style: normal; 
+    font-weight: 400;
     color: #171717;
     max-width: 1920px;
     text-decoration: none;
@@ -127,7 +129,7 @@
         margin-right: 0px;
     }
     .p-adress {
-        width: 170px;
+        width: 180px;
         margin-right: 0px;
     }
     .header_right {
